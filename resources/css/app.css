@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.required {
+    @apply after:content-['*'] after:ml-0.5 after:text-red-500;
+}
+.input-label {
+    @apply inline-block text-lg mb-2;
+}
+
+.input {
+    @apply border border-gray-200 rounded p-2 w-full;
+}
