@@ -9,9 +9,11 @@
     <link rel="icon" href="images/favicon.ico" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
+    {{--  add alphine js link   --}}
+
     @vite('resources/css/app.css')
 
-    <title>Job List</title>
+    <title>JobList -- Find And Post - Jobs</title>
 </head>
 
 <body>

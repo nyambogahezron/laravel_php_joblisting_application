@@ -1,10 +1,8 @@
 @if (session()->has('message'))
-    <script>
-        swal({
-            buttons: false,
-            text: "{{ session('message') }}",
-            timer: 3000,
-            footer: false,
-        });
-    </script>
+    <div x-data="{ show: true }" x-init="setTimeout(() => show = false, 3000)" x-show="show"
+        class='fixed left-1/2 top-0 -translate-x-1/2 transform bg-[#ef3b2d] px-48 py-3 text-white'>
+        <p>
+            {{ session('message') }}
+        </p>
+    </div>
 @endif
